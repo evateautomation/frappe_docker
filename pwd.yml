@@ -123,7 +123,7 @@ services:
       SOCKETIO: websocket:9000
 
       # IMPORTANT: serve site based on incoming Host header (frappe.evatefinance.com)
-      FRAPPE_SITE_NAME_HEADER: $$host
+      FRAPPE_SITE_NAME_HEADER: ${SERVICE_FQDN_FRONTEND}
 
       UPSTREAM_REAL_IP_ADDRESS: 127.0.0.1
       UPSTREAM_REAL_IP_HEADER: X-Forwarded-For
