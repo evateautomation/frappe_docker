@@ -84,13 +84,13 @@ services:
         done;
         echo "sites/common_site_config.json found";
         bench new-site \
-  --mariadb-user-host-login-scope='%' \
-  --admin-password=admin \
-  --db-root-username=root \
-  --db-root-password=admin \
-  --install-app erpnext \
-  --set-default \
-  frappe.evatefinance.com;
+          --mariadb-user-host-login-scope='%' \
+          --admin-password=admin \
+          --db-root-username=root \
+          --db-root-password=admin \
+          --install-app erpnext \
+          --set-default \
+          frappe.evatefinance.com;
 
 
   db:
